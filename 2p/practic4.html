@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Order SO004</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .order-date, .order-status {
+      display: flex;
+      align-items: center;
+    }
+
+    .order-date input, .order-status select {
+      flex: 1;
+      margin-right: 10px;
+    }
+
+    .customer-purchase-order-reference {
+      width: 100%;
+    }
+
+    .total-amount input {
+      width: 100px;
+    }
+
+    .currency-of-total-amount select {
+      width: 100px;
+      margin-left: 10px;
+    }
+
+    .freight-terms select,
+    .shipping-method select {
+      width: 200px;
+    }
+
+    .delivery-address,
+    .apt-723 {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sales Order SO004</h1>
+
+    <form id="sales-order-form">
+      <div class="form-group order-date">
+        <label for="order-date">Order date:</label>
+        <input type="text" id="order-date" value="2/4/2016">
+      </div>
+
+      <div class="form-group order-status">
+        <label for="order-status">Order status:</label>
+        <select id="order-status">
+          <option value="Invoice">Invoice</option>
+        </select>
+      </div>
+
+      <div class="form-group customer-purchase-order-reference">
+        <label for="customer-purchase-order-reference">Customer purchase order reference:</label>
+        <input type="text" id="customer-purchase-order-reference">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" value="Lynn Haney">
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <input type="text" id="description" value="Tricia Hess">
+      </div>
+
+      <div class="form-group total-amount">
+        <label for="total-amount">Total amount:</label>
+        <input type="text" id="total-amount" value="350">
+        <select id="currency-of-total-amount">
+          <option value="USD">USD</option>
+        </select>
+      </div>
+
+      <div class="form-group freight-terms">
+        <label for="freight-terms">Freight terms:</label>
+        <select id="freight-terms">
+          <option value="FOB">FOB</option>
+        </select>
+      </div>
+
+      <div class="form-group shipping-method">
+        <label for="shipping-method">Shipping method:</label>
+        <select id="shipping-method">
+          <option value="AirBorne">AirBorne</option>
+        </select>
+      </div>
+
+      <div class="form-group delivery-address">
+        <label for="delivery-address">Delivery address:</label>
+        <input type="text" id="delivery-address" value="123 Gray Rd">
+      </div>
+
+      <div class="form-group apt-723">
+        <input type="text" id="apt-723" value="APT 723">
+      </div>
+
+      <div class="form-group">
+        <label for="city">City:</label>
+        <input type="text" id="city" value="Colorado">
+      </div>
+
+      <div class="form-group">
+        <label for="state">State:</label>
+        <input type="text" id="state" value="CO">
+      </div>
+
+      <div class="form-group">
+        <label for="postal-code">Postal code:</label>
+        <input type="text" id="postal-code" value="80001">
+      </div>
+
+      <div class="form-group">
+        <label for="country-region">Country/region:</label>
+        <select id="country-region">
+          <option value="US">US</option>
+        </select>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
